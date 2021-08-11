@@ -73,5 +73,8 @@ function addItem(e) {
 function removeItem(e) {
   if (e.target.classList.contains("delete")) {
     console.log(1);
+    let li = e.target.parentElement;
+    console.log(li);
+    itemList.removeChild(li);
   }
 }
